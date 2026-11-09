@@ -7,6 +7,7 @@
   <meta name="description" content="Kontaktujte pohrebnú službu Handlová. Tel: +421 903 312 725. Námestie baníkov 13/24, 972 51 Handlová." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="privacy.css" />
 </head>
 <body>
 
@@ -68,21 +69,30 @@
       </table>
     </div>
 
-    <div class="kontakt-map fade-up fade-up-d2">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2636.0!2d18.7596!3d48.7263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDQzJzM0LjciTiAxOMKwNDUnMzQuNiJF!5e0!3m2!1ssk!2ssk!4v1000000000000"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        title="Mapa – Pohrebná služba Handlová">
-      </iframe>
+    <div class="kontakt-map fade-up fade-up-d2" data-map-container data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2636.0!2d18.7596!3d48.7263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDQzJzM0LjciTiAxOMKwNDUnMzQuNiJF!5e0!3m2!1ssk!2ssk!4v1000000000000">
+      <div class="map-placeholder" data-map-placeholder>
+        <h2>Kde nás nájdete</h2>
+        <p>Námestie baníkov 13/24, 972 51 Handlová</p>
+        <p>Google mapu zobrazíme až po Vašom súhlase s externou mapou.</p>
+        <button type="button" class="privacy-button" data-cookie-settings hidden>Nastaviť súhlas s mapou</button>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=N%C3%A1mestie+ban%C3%ADkov+13%2F24%2C+Handlov%C3%A1" target="_blank" rel="noopener noreferrer">Otvoriť Google Maps v novom okne</a>
+        <noscript>Na nastavenie súhlasu a vloženú mapu je potrebný JavaScript. Adresu aj odkaz na mapu môžete použiť bez neho.</noscript>
+      </div>
     </div>
   </div>
 </div>
 
 <div id="footer">
   <span>© Pohrebníctvo-FLORENA-A, s.r.o</span>
+  <div class="footer-privacy" role="group" aria-label="Ochrana súkromia">
+    <a href="gdpr.html">Ochrana osobných údajov (GDPR)</a>
+    <a href="cookies.html">Cookies</a>
+    <button type="button" data-cookie-settings hidden>Nastavenia cookies</button>
+  </div>
   <span>Filip S. Belan DΞSIGИ</span>
 </div>
 
 <script src="nav.js"></script>
+<script src="privacy.js"></script>
 </body>
 </html>
